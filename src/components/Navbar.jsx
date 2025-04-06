@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import JeanLogo from "../assets/Jean1.png";
+import CloudinaryImage from "../utilities/CloudinaryImage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,11 +9,15 @@ const Navbar = () => {
     <nav className="flex h-16 w-full items-center justify-between md:h-20">
       {/* Navbar Logo */}
       <div className="flex items-center gap-4 text-2xl font-bold">
-        <img src={JeanLogo} alt="Logo" className="h-8 w-auto" />
+        <CloudinaryImage
+          publicId={"Jean_Logo_Fondo_obir7f.png"}
+          alt={"Logo"}
+          tailwind={"size-12 md:size-16 object-cover"}
+        />
         <span>Jean's Journal</span>
       </div>
       {/* Mobile Menu*/}
-      <div className="navbar-mobile md:hidden">
+      <div className="md:hidden">
         {/* Mobile Button */}
         <div
           className="cursor-pointer"
@@ -38,9 +42,10 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      {/* Desktop */}
+      {/* Desktop Menu*/}
       <div className="hidden items-center gap-8 font-medium md:flex xl:gap-12">
         <a href="">Home</a>
+
         <a href="">Trending</a>
         <a href="">Most Popular</a>
         <a href="">About</a>
