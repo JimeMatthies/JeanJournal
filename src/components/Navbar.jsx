@@ -1,5 +1,7 @@
 import React from "react";
 import JeanLogo from "../assets/Jean1.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
 	return (
@@ -8,8 +10,12 @@ const Navbar = () => {
 				<img src={JeanLogo} alt="Logo" className="nb-li w-auto h-8" />
 				<span>Jean's Journal</span>
 			</div>
-			<div className="nb-m md:hidden">M</div>
-			<div className="nb-d hidden md:flex">D</div>
+			<div className="nb-m md:hidden">
+				<FontAwesomeIcon icon={faBars} />
+			</div>
+			<div className="nb-d hidden md:flex">
+				<FontAwesomeIcon icon={faXmark} />
+			</div>
 		</div>
 	);
 };
