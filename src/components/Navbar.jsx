@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import CloudinaryImage from "../utilities/CloudinaryImage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -8,14 +9,14 @@ const Navbar = () => {
   return (
     <nav className="flex h-16 w-full items-center justify-between md:h-20">
       {/* Navbar Logo */}
-      <div className="flex items-center gap-4 text-2xl font-bold">
+      <Link to="/" className="flex items-center gap-4 text-2xl font-bold">
         <CloudinaryImage
           publicId={"Jean_Logo_Fondo_obir7f.png"}
           alt={"Logo"}
           tailwind={"size-12 md:size-16 object-cover"}
         />
         <span>Jean's Journal</span>
-      </div>
+      </Link>
       {/* Mobile Menu*/}
       <div className="md:hidden">
         {/* Mobile Button */}
@@ -31,29 +32,28 @@ const Navbar = () => {
             open ? "-right-0" : "-right-[100%]"
           }`}
         >
-          <a href="">Home</a>
-          <a href="">Trending</a>
-          <a href="">Most Popular</a>
-          <a href="">About</a>
-          <a href="">
+          <Link to="/">Home</Link>
+          <Link to="/">Trending</Link>
+          <Link to="/">Most Popular</Link>
+          <Link to="/about">About</Link>
+          <Link to="/jaja">
             <button className="rounded-3xl bg-emerald-600 px-4 py-2 text-white">
               Login
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       {/* Desktop Menu*/}
       <div className="hidden items-center gap-8 font-medium md:flex xl:gap-12">
-        <a href="">Home</a>
-
-        <a href="">Trending</a>
-        <a href="">Most Popular</a>
-        <a href="">About</a>
-        <a href="">
+        <Link to="/">Home</Link>
+        <Link to="/">Trending</Link>
+        <Link to="/">Most Popular</Link>
+        <Link to="/about">About</Link>
+        <Link to="/jaja">
           <button className="rounded-3xl bg-emerald-600 px-4 py-2 text-white">
             Login
           </button>
-        </a>
+        </Link>
       </div>
     </nav>
   );
