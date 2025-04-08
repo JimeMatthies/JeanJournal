@@ -1,9 +1,11 @@
 import React from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Home from "./routes/Home";
 import About from "./routes/About";
+import Login from "./routes/Login";
+import Register from "./routes/Register";
 import NotFound from "./routes/NotFound";
 import "./App.css";
 
@@ -14,9 +16,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

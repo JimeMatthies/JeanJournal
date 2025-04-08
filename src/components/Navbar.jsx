@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import CloudinaryImage from "../utilities/CloudinaryImage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -49,11 +50,16 @@ const Navbar = () => {
         <Link to="/">Trending</Link>
         <Link to="/">Most Popular</Link>
         <Link to="/about">About</Link>
-        <Link to="/jaja">
-          <button className="rounded-3xl bg-emerald-600 px-4 py-2 text-white">
-            Login
-          </button>
-        </Link>
+        <SignedOut>
+          <Link to="/login">
+            <button className="rounded-3xl bg-emerald-600 px-4 py-2 text-white">
+              Login
+            </button>
+          </Link>
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
       </div>
     </nav>
   );
