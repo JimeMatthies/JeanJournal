@@ -23,8 +23,20 @@
   --color-jean-800: #0c6356;
   --color-jean-900: #105148;
   --color-jean-950: #01322c;
+
+  --color-star-50: #f9f7fd;
+  --color-star-100: #f1ecfb;
+  --color-star-200: #e6dcf8;
+  --color-star-300: #d2c0f2;
+  --color-star-400: #b798e8;
+  --color-star-500: #9b70dc;
+  --color-star-600: #8451cc;
+  --color-star-700: #6f3eb2;
+  --color-star-800: #603894;
+  --color-star-900: #4e2e75;
+  --color-star-950: #321655;
 }
 
 body {
-  background-color: #e9e1f4;
+  background-color: var(--color-star-200);
 }

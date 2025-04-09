@@ -57,8 +57,8 @@ const Blog = () => {
           <button className="bg-jean-600 absolute top-0 right-0 bottom-0 left-0 m-auto flex h-25 w-25 cursor-pointer items-center justify-center rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="800px"
-              height="800px"
+              width="200"
+              height="200"
               viewBox="0 0 24 24"
               fill="none"
             >
