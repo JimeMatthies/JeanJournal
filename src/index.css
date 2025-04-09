@@ -24,3 +24,7 @@
   --color-jean-900: #105148;
   --color-jean-950: #01322c;
 }
+
+body {
+  background-color: #e9e1f4;
+}

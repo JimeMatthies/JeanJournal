@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Categories from "../components/Categories";
 
 const Blog = () => {
   return (
@@ -53,7 +54,7 @@ const Blog = () => {
               </textPath>
             </text>
           </svg>
-          <button className="bg-jean-600 absolute top-0 right-0 bottom-0 left-0 m-auto flex h-25 w-25 items-center justify-center rounded-full">
+          <button className="bg-jean-600 absolute top-0 right-0 bottom-0 left-0 m-auto flex h-25 w-25 cursor-pointer items-center justify-center rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="800px"
@@ -77,7 +78,10 @@ const Blog = () => {
           </button>
         </Link>
       </div>
-      {/* Blog List */}
+      {/* Categories */}
+      <div>
+        <Categories />
+      </div>
     </div>
   );
 };
