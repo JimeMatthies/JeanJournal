@@ -34,11 +34,11 @@ const Navbar = () => {
           }`}
         >
           <Link to="/">Home</Link>
-          <Link to="/">Trending</Link>
+          <Link to="/blog">Blog</Link>
           <Link to="/">Most Popular</Link>
           <Link to="/about">About</Link>
           <Link to="/jaja">
-            <button className="rounded-3xl bg-emerald-600 px-4 py-2 text-white">
+            <button className="bg-jean-600 rounded-3xl px-4 py-2 text-white">
               Login
             </button>
           </Link>
@@ -47,12 +47,12 @@ const Navbar = () => {
       {/* Desktop Menu*/}
       <div className="hidden items-center gap-8 font-medium md:flex xl:gap-12">
         <Link to="/">Home</Link>
-        <Link to="/">Trending</Link>
+        <Link to="/blog">Blog</Link>
         <Link to="/">Most Popular</Link>
         <Link to="/about">About</Link>
         <SignedOut>
           <Link to="/login">
-            <button className="rounded-3xl bg-emerald-600 px-4 py-2 text-white">
+            <button className="bg-jean-600 rounded-3xl px-4 py-2 text-white">
               Login
             </button>
           </Link>

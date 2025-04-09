@@ -10,3 +10,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@theme {
+  --color-jean-50: #effef9;
+  --color-jean-100: #c9feef;
+  --color-jean-200: #94fbdf;
+  --color-jean-300: #56f2cd;
+  --color-jean-400: #23deb7;
+  --color-jean-500: #0abb99;
+  --color-jean-600: #059c83;
+  --color-jean-700: #097c6a;
+  --color-jean-800: #0c6356;
+  --color-jean-900: #105148;
+  --color-jean-950: #01322c;
+}

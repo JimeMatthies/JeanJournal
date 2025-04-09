@@ -3,6 +3,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 // import Footer from "./components/Footer";
 import Home from "./routes/Home";
+import Blog from "./routes/Blog";
 import About from "./routes/About";
 import Login from "./routes/Login";
 import Register from "./routes/Register";
@@ -15,6 +16,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Navigate to="/" replace />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
