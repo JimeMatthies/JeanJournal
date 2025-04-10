@@ -7,8 +7,8 @@ import { AdvancedImage } from "@cloudinary/react";
 const CloudinaryImage = ({
   publicId,
   alt = "",
-  width = "500",
-  height = "500",
+  width = "600",
+  height = "600",
   tailwind = "",
 }) => {
   const cld = new Cloudinary({ cloud: { cloudName: "do3goobuv" } });
