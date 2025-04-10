@@ -20,28 +20,46 @@ const Categories = () => {
           Music
         </Link>
         <Link
-          to="/posts?cat=development"
+          to="/posts?cat=games"
           className="hover:bg-star-300 rounded-full px-4 py-2 font-mono"
         >
-          Development
+          Games
         </Link>
         <Link
-          to="/posts?cat=databases"
+          to="/posts?cat=movies"
           className="hover:bg-star-300 rounded-full px-4 py-2 font-mono"
         >
-          Databases
+          Movies
         </Link>
         <Link
-          to="/posts?cat=seo"
+          to="/posts?cat=series"
           className="hover:bg-star-300 rounded-full px-4 py-2 font-mono"
         >
-          Search Engines
+          Series
         </Link>
         <Link
-          to="/posts?cat=marketing"
+          to="/posts?cat=youtube"
           className="hover:bg-star-300 rounded-full px-4 py-2 font-mono"
         >
-          Marketing
+          Youtube
+        </Link>
+        <Link
+          to="/posts?cat=sports"
+          className="hover:bg-star-300 rounded-full px-4 py-2 font-mono"
+        >
+          Sports
+        </Link>
+        <Link
+          to="/posts?cat=food"
+          className="hover:bg-star-300 rounded-full px-4 py-2 font-mono"
+        >
+          Food
+        </Link>
+        <Link
+          to="/posts?cat=jean"
+          className="hover:bg-star-300 rounded-full px-4 py-2 font-mono"
+        >
+          Jean
         </Link>
       </div>
       <span className="text-xl font-medium">|</span>
