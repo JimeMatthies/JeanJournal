@@ -4,7 +4,7 @@ const Search = () => {
   return (
     <div className="relative flex items-center justify-center rounded-full shadow-lg duration-300 hover:shadow-xl">
       <input
-        className="bg-star-200 ring-star-400 rounded-full px-4 py-1 font-mono text-zinc-600 shadow-md ring-1 duration-300 outline-none placeholder:text-zinc-600 placeholder:opacity-80 focus:shadow-md focus:ring-2 focus:shadow-emerald-400 focus:ring-emerald-400"
+        className="ring-star-400 rounded-full bg-gray-50 px-4 py-1 font-mono text-zinc-600 shadow-md ring-1 duration-300 outline-none placeholder:text-zinc-600 placeholder:opacity-80 focus:shadow-md focus:ring-2 focus:shadow-emerald-400 focus:ring-emerald-400"
         autoComplete="off"
         placeholder="Search Post..."
         type="text"

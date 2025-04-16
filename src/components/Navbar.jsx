@@ -8,7 +8,10 @@ import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="flex h-16 w-full items-center justify-between md:h-20">
+    <nav
+      id="navbar"
+      className="flex h-16 w-full items-center justify-between md:h-20"
+    >
       {/* Navbar Logo */}
       <Link to="/" className="flex items-center gap-4 text-2xl font-bold">
         <CloudinaryImage

@@ -4,7 +4,10 @@ import Search from "./Search";
 
 const Categories = () => {
   return (
-    <div className="hidden items-center justify-center gap-8 rounded-3xl bg-white p-4 shadow-xl/20 md:flex xl:rounded-full">
+    <section
+      id="categories"
+      className="mt-8 hidden items-center justify-center gap-8 rounded-3xl bg-white p-4 shadow-xl/20 md:flex xl:rounded-full"
+    >
       {/* Links */}
       <div className="flex flex-1 flex-wrap items-center justify-between">
         <Link
@@ -65,7 +68,7 @@ const Categories = () => {
       <span className="text-xl font-medium">|</span>
       {/* search */}
       <Search />
-    </div>
+    </section>
   );
 };
 
