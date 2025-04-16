@@ -17,6 +17,8 @@ const Navbar = () => {
         <CloudinaryImage
           publicId={"Jean_Logo_Fondo_obir7f.png"}
           alt={"Logo"}
+          width={"64"}
+          height={"64"}
           tailwind={"size-12 md:size-16 object-cover rounded-2xl"}
         />
         <span>Jean's Journal</span>

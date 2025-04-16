@@ -13,13 +13,13 @@ const TopFive = () => {
         className="flex w-full flex-col gap-4 rounded-3xl bg-white p-4 shadow-lg lg:w-1/2"
       >
         {/* Image 1*/}
-
         <CloudinaryImage
           publicId="cld-sample-3.jpg"
           alt={"Sample Image 3"}
+          width={"924"}
+          height={"924"}
           tailwind={"rounded-2xl object-cover h-full w-full"}
         />
-
         {/* Details */}
         <div className="flex items-center gap-4">
           <h1 className="font-semibold lg:text-lg">01.</h1>
@@ -47,6 +47,8 @@ const TopFive = () => {
           <CloudinaryImage
             publicId="cld-sample.jpg"
             alt={"Sample Image"}
+            width={"462"}
+            height={"462"}
             tailwind={"rounded-2xl object-cover aspect-video md:w-1/2"}
           />
           {/* Content */}
@@ -77,6 +79,8 @@ const TopFive = () => {
           <CloudinaryImage
             publicId="cld-sample-5.jpg"
             alt={"Sample Image 5"}
+            width={"462"}
+            height={"462"}
             tailwind={"rounded-2xl object-cover aspect-video md:w-1/2"}
           />
           {/* Content */}
@@ -107,6 +111,8 @@ const TopFive = () => {
           <CloudinaryImage
             publicId="cld-sample-4.jpg"
             alt={"Sample Image 4"}
+            width={"462"}
+            height={"462"}
             tailwind={"rounded-2xl object-cover aspect-video md:w-1/2"}
           />
           {/* Content */}

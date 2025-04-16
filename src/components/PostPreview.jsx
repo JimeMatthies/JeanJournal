@@ -46,27 +46,27 @@ const PostPreview = () => {
           to="/posts/1"
           className="flex flex-col items-center justify-center p-4 md:items-end"
         >
-          <button class="group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 border-teal-500 px-6 py-3 font-medium text-teal-600 shadow-md transition duration-300 ease-out">
-            <span class="ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-teal-500 text-white duration-300 group-hover:translate-x-0">
+          <button className="group border-jean-500 text-jean-600 relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 px-6 py-3 font-medium shadow-md transition duration-300 ease-out">
+            <span className="ease bg-jean-500 absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center text-white duration-300 group-hover:translate-x-0">
               <svg
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M14 5l7 7m0 0l-7 7m7-7H3"
                 ></path>
               </svg>
             </span>
-            <span class="ease absolute flex h-full w-full transform items-center justify-center text-teal-500 transition-all duration-300 group-hover:translate-x-full">
+            <span className="ease text-jean-500 absolute flex h-full w-full transform items-center justify-center transition-all duration-300 group-hover:translate-x-full">
               Read More
             </span>
-            <span class="invisible relative">Read More</span>
+            <span className="invisible relative">Read More</span>
           </button>
         </Link>
       </div>
