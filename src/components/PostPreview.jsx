@@ -42,32 +42,31 @@ const PostPreview = () => {
           magnam quod eos incidunt. Beatae!
         </p>
         {/* Read More Link */}
+
         <Link
-          to="/posts/1"
-          className="flex flex-col items-center justify-center p-4 md:items-end"
+          to="/post/1"
+          className="group border-jean-500 text-jean-600 relative inline-flex w-36 flex-col items-center justify-center overflow-hidden rounded-full border-2 p-4 px-6 py-3 font-medium shadow-md transition duration-300 ease-out"
         >
-          <button className="group border-jean-500 text-jean-600 relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 px-6 py-3 font-medium shadow-md transition duration-300 ease-out">
-            <span className="ease bg-jean-500 absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center text-white duration-300 group-hover:translate-x-0">
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
-            </span>
-            <span className="ease text-jean-500 absolute flex h-full w-full transform items-center justify-center transition-all duration-300 group-hover:translate-x-full">
-              Read More
-            </span>
-            <span className="invisible relative">Read More</span>
-          </button>
+          <span className="ease bg-jean-500 absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center text-white duration-300 group-hover:translate-x-0">
+            <svg
+              className="h-6 w-6"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+          <span className="ease text-jean-500 absolute flex h-full w-full transform items-center justify-center transition-all duration-300 group-hover:translate-x-full">
+            Read More
+          </span>
+          <span className="invisible relative">Read More</span>
         </Link>
       </div>
     </article>

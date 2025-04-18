@@ -13,13 +13,15 @@ const TopFive = () => {
         className="flex w-full flex-col gap-4 rounded-3xl bg-white p-4 shadow-lg lg:w-1/2"
       >
         {/* Image 1*/}
-        <CloudinaryImage
-          publicId="cld-sample-3.jpg"
-          alt={"Sample Image 3"}
-          width={"924"}
-          height={"924"}
-          tailwind={"rounded-2xl object-cover h-full w-full"}
-        />
+        <Link to="/post/1" className="h-full w-full">
+          <CloudinaryImage
+            publicId="cld-sample-3.jpg"
+            alt={"Sample Image 3"}
+            width={"924"}
+            height={"924"}
+            tailwind={"rounded-2xl object-cover h-full w-full"}
+          />
+        </Link>
         {/* Details */}
         <div className="flex items-center gap-4">
           <h1 className="font-semibold lg:text-lg">01.</h1>
@@ -44,13 +46,15 @@ const TopFive = () => {
           className="flex flex-col gap-4 rounded-3xl bg-white p-4 shadow-lg md:flex-row lg:h-1/4"
         >
           {/* Image 2*/}
-          <CloudinaryImage
-            publicId="cld-sample.jpg"
-            alt={"Sample Image"}
-            width={"462"}
-            height={"462"}
-            tailwind={"rounded-2xl object-cover aspect-video md:w-1/2"}
-          />
+          <Link to={"/post/2"} className="w-full md:w-1/2">
+            <CloudinaryImage
+              publicId="cld-sample.jpg"
+              alt={"Sample Image"}
+              width={"462"}
+              height={"462"}
+              tailwind={"rounded-2xl object-cover aspect-video h-full w-full"}
+            />
+          </Link>
           {/* Content */}
           <div className="w-full md:w-1/2">
             {/* Details */}
@@ -76,13 +80,15 @@ const TopFive = () => {
           className="flex flex-col gap-4 rounded-3xl bg-white p-4 shadow-lg md:flex-row lg:h-1/4"
         >
           {/* Image 3*/}
-          <CloudinaryImage
-            publicId="cld-sample-5.jpg"
-            alt={"Sample Image 5"}
-            width={"462"}
-            height={"462"}
-            tailwind={"rounded-2xl object-cover aspect-video md:w-1/2"}
-          />
+          <Link to={"/post/3"} className="w-full md:w-1/2">
+            <CloudinaryImage
+              publicId="cld-sample-5.jpg"
+              alt={"Sample Image 5"}
+              width={"462"}
+              height={"462"}
+              tailwind={"rounded-2xl object-cover aspect-video h-full w-full"}
+            />
+          </Link>
           {/* Content */}
           <div className="w-full md:w-1/2">
             {/* Details */}
@@ -108,13 +114,15 @@ const TopFive = () => {
           className="flex flex-col gap-4 rounded-3xl bg-white p-4 shadow-lg md:flex-row lg:h-1/4"
         >
           {/* Image 4*/}
-          <CloudinaryImage
-            publicId="cld-sample-4.jpg"
-            alt={"Sample Image 4"}
-            width={"462"}
-            height={"462"}
-            tailwind={"rounded-2xl object-cover aspect-video md:w-1/2"}
-          />
+          <Link to={"/post/4"} className="w-full md:w-1/2">
+            <CloudinaryImage
+              publicId="cld-sample-4.jpg"
+              alt={"Sample Image 4"}
+              width={"462"}
+              height={"462"}
+              tailwind={"rounded-2xl object-cover aspect-video h-full w-full"}
+            />
+          </Link>
           {/* Content */}
           <div className="w-full md:w-1/2">
             {/* Details */}
@@ -141,7 +149,7 @@ const TopFive = () => {
         >
           {/* Image 5*/}
           <iframe
-            className="aspect-video w-full rounded-2xl object-cover md:w-1/2"
+            className="aspect-video h-full w-full rounded-2xl object-cover md:w-1/2"
             src="https://www.youtube.com/embed/4QpFnSsp4gU?si=k-brZvK24VbUPDNL"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
