@@ -1,5 +1,6 @@
 import React from "react";
 import CloudinaryImage from "../utilities/CloudinaryImage";
+import PostActions from "../components/PostActions";
 import Search from "../components/Search";
 import { Link } from "react-router-dom";
 
@@ -190,6 +191,8 @@ const Post = () => {
               Lorem ipsum dolor sit amet consectetur
             </p>
           </div>
+          {/* Actions */}
+          <PostActions />
           {/* Categories */}
           <h1 className="mt-4 text-sm font-medium">Categories</h1>
           <div className="my-4 flex flex-col gap-2 text-sm">
