@@ -185,7 +185,7 @@ const Post = () => {
                 height={"64"}
                 tailwind={"w-1/3 object-cover rounded-full"}
               />
-              <p className="text-jean-800 flex w-2/3">Jean&#9734;</p>
+              <p className="text-jean-700 flex w-2/3">Jean&#9734;</p>
             </Link>
             <p className="text-sm text-gray-500">
               Lorem ipsum dolor sit amet consectetur
